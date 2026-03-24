@@ -4,6 +4,7 @@ import Button from './components/Button'
 import Events from './components/Events'
 import LoginPage from './components/LoginPage'
 import Products from './components/Products'
+import State from './components/State'
 
 
 const data={
@@ -43,7 +44,9 @@ function App() {
     />
 
     <Products/>
-    <Events/>
+    <Events/><br /><br />
+    <State/><br /><br />
+    <State/><br /><br />
     
     </>
   )
