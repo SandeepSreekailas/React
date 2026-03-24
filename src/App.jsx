@@ -1,10 +1,11 @@
+import { useState } from 'react'
 import './App.css'
 import Admin from './components/Admin'
 import Button from './components/Button'
 import Events from './components/Events'
 import LoginPage from './components/LoginPage'
 import Products from './components/Products'
-import State from './components/State'
+import State, {Buttonn} from './components/State'
 
 
 const data={
@@ -17,6 +18,11 @@ const status=true
 
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
 
   return (
     <>
@@ -45,9 +51,14 @@ function App() {
 
     <Products/>
     <Events/><br /><br />
+    {/* you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.*/}
     <State/><br /><br />
     <State/><br /><br />
+
+    {/*Sharing data between components*/}
     
+  <Buttonn count={count} onClick={handleClick}/><br /><br />  
+  <Buttonn count={count} onClick={handleClick}/><br /><br />  
     </>
   )
 }
