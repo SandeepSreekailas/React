@@ -7,6 +7,7 @@ import LoginPage from './components/LoginPage'
 import Products from './components/Products'
 import State, { Buttonn } from './components/State'
 import Onchangeevents from './components/Onchangeevents'
+import Formevents from './components/Formevents'
 
 
 
@@ -63,7 +64,12 @@ function App() {
       <Buttonn count={count} onClick={handleClick} /><br /><br />
 
       {/*onChange = event handler used primarily with form elements */}
-      <Onchangeevents />
+      <Onchangeevents /><br /><br />
+
+      {/*Form events*/}
+      <Formevents />
+
+
 
 
     </>
