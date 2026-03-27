@@ -9,6 +9,7 @@ import State, { Buttonn } from './components/State'
 import Onchangeevents from './components/Onchangeevents'
 import Formevents from './components/Formevents'
 import Updaterfunctions from './components/Updaterfunctions'
+import UpdateObjectState from './components/UpdateObjectState'
 
 
 
@@ -72,6 +73,9 @@ function App() {
 
       {/*Updater Function*/}
       <Updaterfunctions/>
+
+      {/* Update Object State */}
+      <UpdateObjectState/>
 
 
 
