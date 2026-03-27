@@ -8,6 +8,7 @@ import Products from './components/Products'
 import State, { Buttonn } from './components/State'
 import Onchangeevents from './components/Onchangeevents'
 import Formevents from './components/Formevents'
+import Updaterfunctions from './components/Updaterfunctions'
 
 
 
@@ -68,6 +69,9 @@ function App() {
 
       {/*Form events*/}
       <Formevents />
+
+      {/*Updater Function*/}
+      <Updaterfunctions/>
 
 
 
