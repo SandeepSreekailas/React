@@ -10,6 +10,7 @@ import Onchangeevents from './components/Onchangeevents'
 import Formevents from './components/Formevents'
 import Updaterfunctions from './components/Updaterfunctions'
 import UpdateObjectState from './components/UpdateObjectState'
+import UpdateArrayState from './components/UpdateArrayState'
 
 
 
@@ -76,6 +77,9 @@ function App() {
 
       {/* Update Object State */}
       <UpdateObjectState/>
+
+      {/* Update Array State */}
+      <UpdateArrayState/>
 
 
 
