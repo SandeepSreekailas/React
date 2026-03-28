@@ -11,6 +11,7 @@ import Formevents from './components/Formevents'
 import Updaterfunctions from './components/Updaterfunctions'
 import UpdateObjectState from './components/UpdateObjectState'
 import UpdateArrayState from './components/UpdateArrayState'
+import UpdateObArrState from './components/UpdateObArrState'
 
 
 
@@ -81,8 +82,8 @@ function App() {
       {/* Update Array State */}
       <UpdateArrayState/>
 
-
-
+      {/* Update Object and Array State */}
+      <UpdateObArrState/>
 
     </>
   )
