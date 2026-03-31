@@ -12,6 +12,7 @@ import Updaterfunctions from './components/Updaterfunctions'
 import UpdateObjectState from './components/UpdateObjectState'
 import UpdateArrayState from './components/UpdateArrayState'
 import UpdateObArrState from './components/UpdateObArrState'
+import ToDoList from './components/ToDoList'
 
 
 
@@ -84,6 +85,9 @@ function App() {
 
       {/* Update Object and Array State */}
       <UpdateObArrState/>
+
+      {/* TO DO LIST */}
+      <ToDoList/>
 
     </>
   )
