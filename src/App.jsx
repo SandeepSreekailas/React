@@ -13,7 +13,8 @@ import UpdateObjectState from './components/UpdateObjectState'
 import UpdateArrayState from './components/UpdateArrayState'
 import UpdateObArrState from './components/UpdateObArrState'
 import ToDoList from './components/ToDoList'
-
+import UseEffects from './components/UseEffects'
+import UseEffectex2 from './components/UseEffectex2'
 
 
 const data = {
@@ -88,6 +89,12 @@ function App() {
 
       {/* TO DO LIST */}
       <ToDoList/>
+
+      {/* Use Effect example 1 */}
+      <UseEffects/>
+
+      {/* Use Effect example 2 */}
+      <UseEffectex2/>
 
     </>
   )
