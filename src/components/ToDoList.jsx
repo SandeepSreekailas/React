@@ -1,4 +1,4 @@
-import React, { useOptimistic, useState } from 'react'
+import React, {  useState } from 'react'
 
 function ToDoList() {
     const [task, settask] = useState(["wake up", "eat", "play", "sleep"])
