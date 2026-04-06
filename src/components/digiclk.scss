@@ -1,0 +1,51 @@
+$primary-glow: #00d4ff;
+$bg-color: #0f172a;
+$glass-bg: rgba(255, 255, 255, 0.05);
+$font-digital: 'Courier New', Courier, monospace;
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #1e293b 0%, $bg-color 100%);
+  font-family: $font-digital;
+
+  .clock-glass {
+    padding: 2rem 4rem;
+    background: $glass-bg;
+    backdrop-filter: blur(12px); // The magic "glass" effect
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      border-color: rgba($primary-glow, 0.3);
+    }
+  }
+
+  .clock {
+    span {
+      font-size: 5rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 
+        0 0 10px rgba($primary-glow, 0.8),
+        0 0 20px rgba($primary-glow, 0.4),
+        0 0 30px rgba($primary-glow, 0.1);
+      letter-spacing: 5px;
+    }
+  }
+}
+
+// Responsive tweak for mobile
+@media (max-width: 480px) {
+  .clock-container .clock span {
+    font-size: 2.5rem;
+  }
+  .clock-glass {
+    padding: 1.5rem 2rem;
+  }
+}

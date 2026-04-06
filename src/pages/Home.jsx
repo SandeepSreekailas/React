@@ -16,6 +16,7 @@ import ToDoList from '../components/ToDoList'
 import UseEffects from '../components/UseEffects'
 import UseEffectex2 from '../components/UseEffectex2'
 import CounterApp from '../components/CounterApp'
+import DigitalClock from '../components/DigitalClock'
 
 
 const data = {
@@ -99,6 +100,9 @@ function Home() {
 
       {/* Counter App simple project */}
       <CounterApp/>
+
+      {/* Digital Clock */}
+      <DigitalClock/>
 
 
 
