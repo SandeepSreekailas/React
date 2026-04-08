@@ -17,6 +17,7 @@ import ToDoList from '../components/ToDoList'
 import UseEffects from '../components/UseEffects'
 import UseEffectex2 from '../components/UseEffectex2'
 import DigitalClock from '../components/DigitalClock'
+import ComponentA from '../components/ComponentA'
 
 
 
@@ -41,6 +42,7 @@ function Mainrouter() {
                 <li><Link to='/useeffects'>Useeffects</Link></li>
                 <li><Link to='/useeffectex2'>Useeffectex2</Link></li>
                 <li><Link to='/digitalclock'>Digitalclock</Link></li>
+                <li><Link to='/componentA'>UseContext</Link></li>
             </ul>
             
                 <Routes>
@@ -61,6 +63,7 @@ function Mainrouter() {
                     <Route path='/useeffects' element={<UseEffects />}></Route>
                     <Route path='/useeffectex2' element={<UseEffectex2 />}></Route>
                     <Route path='/digitalclock' element={<DigitalClock />}></Route>
+                    <Route path='/componentA' element={<ComponentA/>}></Route>
                 </Routes>
         
 
