@@ -18,7 +18,7 @@ import UseEffectex2 from '../components/UseEffectex2'
 import CounterApp from '../components/CounterApp'
 import DigitalClock from '../components/DigitalClock'
 import ComponentA from '../components/ComponentA'
-
+import UseRef from '../components/UseRef'
 
 
 const data = {
@@ -108,6 +108,9 @@ function Home() {
 
       {/* Use Conetext */}
       <ComponentA/>
+
+      {/* Use Ref */}
+      <UseRef/>
 
 
 

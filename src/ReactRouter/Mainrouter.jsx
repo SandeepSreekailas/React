@@ -18,6 +18,7 @@ import UseEffects from '../components/UseEffects'
 import UseEffectex2 from '../components/UseEffectex2'
 import DigitalClock from '../components/DigitalClock'
 import ComponentA from '../components/ComponentA'
+import UseRef from '../components/UseRef'
 
 
 
@@ -43,6 +44,7 @@ function Mainrouter() {
                 <li><Link to='/useeffectex2'>Useeffectex2</Link></li>
                 <li><Link to='/digitalclock'>Digitalclock</Link></li>
                 <li><Link to='/componentA'>UseContext</Link></li>
+                <li><Link to='/useref'>UseRef</Link></li>
             </ul>
             
                 <Routes>
@@ -64,6 +66,7 @@ function Mainrouter() {
                     <Route path='/useeffectex2' element={<UseEffectex2 />}></Route>
                     <Route path='/digitalclock' element={<DigitalClock />}></Route>
                     <Route path='/componentA' element={<ComponentA/>}></Route>
+                    <Route path='/useref' element={<UseRef />}></Route>
                 </Routes>
         
 
