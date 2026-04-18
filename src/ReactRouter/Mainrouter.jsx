@@ -21,6 +21,7 @@ import DigitalClock from '../components/DigitalClock'
 import ComponentA from '../components/ComponentA'
 import UseRef from '../components/UseRef'
 import UseMemo from '../components/UseMemo'
+import UseCallback from '../components/UseCallback'
 
 
 function Mainrouter() {
@@ -48,6 +49,7 @@ function Mainrouter() {
                 <li><Link to='/componentA'>UseContext</Link></li>
                 <li><Link to='/useref'>UseRef</Link></li>
                 <li><Link to='/usememo'>UseMemo</Link></li>
+                <li><Link to='/usecallback'>UseCallback</Link></li>
             </ul>
             
                 <Routes>
@@ -72,6 +74,7 @@ function Mainrouter() {
                     <Route path='/componentA' element={<ComponentA/>}></Route>
                     <Route path='/useref' element={<UseRef />}></Route>
                     <Route path='/usememo' element={<UseMemo />}></Route>
+                    <Route path='/usecallback' element={<UseCallback/>}></Route>
                 </Routes>   
 
         </div>
