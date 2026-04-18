@@ -2,23 +2,7 @@ import { useState } from 'react'
 import '../App.css'
 import Admin from '../components/Admin'
 import Button from '../components/Button'
-import Events from '../components/Events'
 import LoginPage from '../components/LoginPage'
-import Products from '../components/Products'
-import State, { Buttonn } from '../components/State'
-import Onchangeevents from '../components/Onchangeevents'
-import Formevents from '../components/Formevents'
-import Updaterfunctions from '../components/Updaterfunctions'
-import UpdateObjectState from '../components/UpdateObjectState'
-import UpdateArrayState from '../components/UpdateArrayState'
-import UpdateObArrState from '../components/UpdateObArrState'
-import ToDoList from '../components/ToDoList'
-import UseEffects from '../components/UseEffects'
-import UseEffectex2 from '../components/UseEffectex2'
-import CounterApp from '../components/CounterApp'
-import DigitalClock from '../components/DigitalClock'
-import ComponentA from '../components/ComponentA'
-import UseRef from '../components/UseRef'
 
 
 const data = {
@@ -62,56 +46,7 @@ function Home() {
         }}
       />
 
-      <Products />
-      <Events /><br /><br />
-      {/* you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.*/}
-      <State /><br /><br />
-      <State /><br /><br />
-
-      {/*Sharing data between components*/}
-
-      <Buttonn count={count} onClick={handleClick} /><br /><br />
-      <Buttonn count={count} onClick={handleClick} /><br /><br />
-
-      {/*onChange = event handler used primarily with form elements */}
-      <Onchangeevents /><br /><br />
-
-      {/*Form events*/}
-      <Formevents />
-
-      {/*Updater Function*/}
-      <Updaterfunctions/>
-
-      {/* Update Object State */}
-      <UpdateObjectState/>
-
-      {/* Update Array State */}
-      <UpdateArrayState/>
-
-      {/* Update Object and Array State */}
-      <UpdateObArrState/>
-
-      {/* TO DO LIST */}
-      <ToDoList/>
-
-      {/* Use Effect example 1 */}
-      <UseEffects/>
-
-      {/* Use Effect example 2 */}
-      <UseEffectex2/>
-
-      {/* Counter App simple project */}
-      <CounterApp/>
-
-      {/* Digital Clock */}
-      <DigitalClock/>
-
-      {/* Use Conetext */}
-      <ComponentA/>
-
-      {/* Use Ref */}
-      <UseRef/>
-
+      
 
 
     </>

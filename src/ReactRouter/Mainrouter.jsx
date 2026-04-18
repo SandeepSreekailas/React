@@ -1,5 +1,6 @@
 import React from 'react'
 import {  Route, Routes, Link } from 'react-router-dom'
+import Home from '../pages/Home'
 import Admin from '../components/Admin'
 import Button from '../components/Button'
 import CounterApp from '../components/CounterApp'
@@ -19,14 +20,15 @@ import UseEffectex2 from '../components/UseEffectex2'
 import DigitalClock from '../components/DigitalClock'
 import ComponentA from '../components/ComponentA'
 import UseRef from '../components/UseRef'
-
+import UseMemo from '../components/UseMemo'
 
 
 function Mainrouter() {
     return (
         <div>
             <ul>
-                <li><Link to='/'>Login</Link></li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/Login'>Login</Link></li>
                 <li><Link to='/button'>Button</Link></li>
                 <li><Link to='/admin'>Admin</Link></li>
                 <li><Link to='/products'>Products</Link></li>
@@ -45,10 +47,12 @@ function Mainrouter() {
                 <li><Link to='/digitalclock'>Digitalclock</Link></li>
                 <li><Link to='/componentA'>UseContext</Link></li>
                 <li><Link to='/useref'>UseRef</Link></li>
+                <li><Link to='/usememo'>UseMemo</Link></li>
             </ul>
             
                 <Routes>
-                    <Route path='/' element={<LoginPage />}></Route>
+                    <Route path='/' element={<Home />}></Route>
+                    <Route path='/Login' element={<LoginPage />}></Route>
                     <Route path='/button' element={<Button />}></Route>
                     <Route path='/admin' element={<Admin />}></Route>
                     <Route path='/products' element={<Products />}></Route>
@@ -67,8 +71,8 @@ function Mainrouter() {
                     <Route path='/digitalclock' element={<DigitalClock />}></Route>
                     <Route path='/componentA' element={<ComponentA/>}></Route>
                     <Route path='/useref' element={<UseRef />}></Route>
-                </Routes>
-        
+                    <Route path='/usememo' element={<UseMemo />}></Route>
+                </Routes>   
 
         </div>
     )
